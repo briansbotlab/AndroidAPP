@@ -1,0 +1,52 @@
+<resources>
+    <!-- Main  -->
+    <string name="app_name">AndroidAPP</string>
+    <string name="btn_add">Add</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="create_at">yyyy-MM-dd HH:mm:ss.SSS</string>
+    <string name="describe">Tap on a Post to delete or update.</string>
+    <string name="posts">Posts</string>
+
+    <!-- Main 2 -->
+
+    <string name="tv_hello">Hello World!</string>
+    <string name="tv_hi">Hi!</string>
+    <string name="tv_key">Key!</string>
+    <string name="btn_logout">out!</string>
+    <string name="btn_start">start!</string>
+    <string name="btn_post">post!</string>
+    <string name="btn_chat">chat!</string>
+    <string name="btn_changepassword">change password!</string>
+
+    <!-- Post -->
+
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+
+    <!-- Login , Register and ChangePassword-->
+
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_email">Not a valid email</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="register">"Register"</string>
+    <string name="btn_link_to_register">Not a member? Create a account now!</string>
+    <string name="change_password">"Change Password"</string>
+    <string name="new_password">"New Password"</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+</resources>

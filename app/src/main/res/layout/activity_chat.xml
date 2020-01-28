@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5C5A58"
+    tools:context=".Chat">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/chat_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1f1e1e"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        >
+
+        <TextView
+            android:id="@+id/chat_toolbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/chat_toolbar_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:background="@android:drawable/ic_lock_silent_mode" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:focusable="true"
+        android:src="@android:drawable/ic_menu_send"
+        android:tint="@android:color/white"
+        android:visibility="visible"
+        app:fabSize="mini"
+        tools:visibility="visible" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/fab"
+        android:layout_toEndOf="@id/fab"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:minHeight="40dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ListView
+        android:id="@+id/list_of_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/textInputLayout"
+        android:layout_below="@+id/chat_toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:dividerHeight="16dp"
+        android:minHeight="40dp"
+        android:stackFromBottom="false">
+
+    </ListView>
+</RelativeLayout >
